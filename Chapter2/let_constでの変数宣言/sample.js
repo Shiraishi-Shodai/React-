@@ -28,4 +28,24 @@
 // const val3 = "constを宣言"
 // console.log(val3)
 
-// constで定義した変数を変更できる例
+
+// // constで定義した変数を変更できる例
+// const obj1 = {
+//     name: "山田",
+//     age: 24
+// };
+// console.log(obj1);
+
+// obj1.name = "Nushida";
+// console.log(obj1);
+// obj1.address = "Tokyo";
+// console.log(obj1);
+// console.table(obj1);
+
+// const arr1 = ["dog", "cat"];
+// console.log(arr1);
+// arr1[0] = "wanko";
+// console.log(arr1);
+// arr1[2] = "flog";
+// console.log(arr1);
+// console.table(arr1);
