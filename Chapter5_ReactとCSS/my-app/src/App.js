@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { CssModules } from './components/CssModules';
+import {StyledJsx} from "./components/StyledJsx";
+import { StyledComponents } from "./components/StyledComponents";
+import { Emotion } from './components/Emotion';
+import {TailwindCss} from './components/TailwindCss';
+import {Test} from "./components/Test";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <CssModules/>
+      <StyledJsx/>
+      <StyledComponents/>
+      <Emotion/>
+      <TailwindCss/>
+      <Test/>
+
+      <h1 className="text-2xl text-blue-400">ReactでTailwind CSSを使用する</h1>
+      <button className="bg-green-400 text-white py-2 px-4 rounded-lg mt-4">
+        ボタン
+      </button>
+    </>
   );
 }
 
