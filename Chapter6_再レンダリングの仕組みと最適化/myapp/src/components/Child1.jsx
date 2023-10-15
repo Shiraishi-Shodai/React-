@@ -9,13 +9,14 @@ const style = {
 };
 
 export const Child1 = memo((props) => {
-    // sconsole.log("Child1レンダリング");
-    const {onClickReset} = props;
+    console.log("Child1レンダリング");
+
+    const {handleReset} = props;
     return(
         <>
             <div style={style}>
                 <p>Child1</p>
-                <button onClick={onClickReset}>リセット</button>
+                <button onClick={handleReset}>リセット</button>
                 <Child2/>
                 <Child3/>
             </div>

@@ -27,16 +27,38 @@ const arr7 = [...arr4, ...arr5];
 console.log(arr7);
 
 const obj1 = {
-    val1: 10,
-    val2: 20,
+  val1: 10,
+  val2: 20,
 };
 
 const obj2 = {
-    val3: 30,
-    val4: 40,
+  val1: 30,
+  val2: 40,
 };
 
-const obj3 = {...obj1};
+const obj10 = {
+  val1: 50,
+  val2: 60,
+};
+
+const obj3 = { ...obj1 };
 console.log(obj3);
-const obj4 = {...obj1, ...obj2};
-console.table(obj4);
+const obj4 = [obj1, obj2, obj10];
+// console.log("ここ");
+// console.log(obj4);
+
+const result = obj4.map((obj) => {
+  console.log("ここ");
+  console.log({...obj, val2: 900});
+
+  if (obj.val1 === 30) {
+    return {
+      ...obj,
+      val1: 100,
+    };
+  }
+
+  return obj;
+});
+
+console.log(result);
