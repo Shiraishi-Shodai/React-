@@ -1,0 +1,20 @@
+[
+    {
+        "id" : 1,
+        "name" : "主田",
+        "age" : 20,
+        "personalColor" : "red"
+    },
+    {
+        "id" : 2,
+        "name" : "先岡",
+        "age" : 28,
+        "personalColor" : "blue"
+    },
+    {
+        "id" : 3,
+        "name" : "後藤",
+        "age" : 35,
+        "personalColor" : "green"
+    }
+]
